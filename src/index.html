@@ -1,0 +1,160 @@
+﻿<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="renderer" content="webkit">
+    <link href="css/lib.css" rel="stylesheet" />
+    <link href="css/css.css?p=201505291040" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/lib.js"></script>
+    <script type="text/javascript">
+    var phoneWidth = parseInt(window.screen.width);
+    var phoneScale = phoneWidth / 640;
+
+    var ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)) {
+        var version = parseFloat(RegExp.$1);
+        // andriod 2.3
+        if (version > 2.3) {
+            document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+            // andriod 2.3以上
+        } else {
+            document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+        }
+        // 其他系统
+    } else {
+        document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+    }
+    </script>
+</head>
+
+<body>
+    <!--div for loading-->
+    <div class="cube">
+        <div class="plane-1">
+            <div class="top-left"></div>
+            <div class="top-middle"></div>
+            <div class="top-right"></div>
+            <div class="middle-left"></div>
+            <div class="middle-middle"></div>
+            <div class="middle-right"></div>
+            <div class="bottom-left"></div>
+            <div class="bottom-middle"></div>
+            <div class="bottom-right"></div>
+        </div>
+        <div class="plane-2">
+            <div class="top-left"></div>
+            <div class="top-middle"></div>
+            <div class="top-right"></div>
+            <div class="middle-left"></div>
+            <div class="middle-middle"></div>
+            <div class="middle-right"></div>
+            <div class="bottom-left"></div>
+            <div class="bottom-middle"></div>
+            <div class="bottom-right"></div>
+        </div>
+        <div class="plane-3">
+            <div class="top-left"></div>
+            <div class="top-middle"></div>
+            <div class="top-right"></div>
+            <div class="middle-left"></div>
+            <div class="middle-middle"></div>
+            <div class="middle-right"></div>
+            <div class="bottom-left"></div>
+            <div class="bottom-middle"></div>
+            <div class="bottom-right"></div>
+        </div>
+    </div>
+    <div class="loadingText" id="loadingText">0%</div>
+    <audio preload="preload" controls id="car_audio" src="resource/bk.mp3" loop></audio>
+    <script language="javascript" type="text/javascript">
+    setTimeout(function() {
+        $(window).scrollTop(1);
+    }, 0);
+    document.getElementById('car_audio').play();
+    document.addEventListener("WeixinJSBridgeReady", function() {
+        WeixinJSBridge.invoke('getNetworkType', {}, function(e) {
+            document.getElementById('car_audio').play();
+        });
+    }, false);
+    </script>
+    <!--Image for WX share-->
+    <img class="wxshare" id="wxshare" src="img/wxshare.png?p=201505291044" />
+    <!--alert message container-->
+    <div class="alertDiv" id="alertDiv"></div>
+    <img class="music" id="music" src="img/p1-music.png?p=201505291044" />
+    <!-- Slider main container -->
+    <div class="swiper-container" id="swiper1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide p1-bg " data-hash="slide1">
+                <img class="ani slideElement swiper-lazy p1-02" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1.5s" data-src="img/p1-02.png">
+                <img class="ani slideElement swiper-lazy p1-03" swiper-animate-effect="tada" swiper-animate-duration="1s" swiper-animate-delay="1s" data-src="img/p1-03.png">
+                <img class="ani slideElement swiper-lazy p1-04" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s" data-src="img/p1-04.png">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide p2-bg " data-hash="slide2">
+                <img class="ani slideElement swiper-lazy p2-02" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s" data-src="img/p2-02.png">
+                <img class="ani slideElement swiper-lazy p2-03" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1.5s" data-src="img/p2-03.png">
+                <img class="ani slideElement swiper-lazy p2-04" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="2.5s" data-src="img/p2-04.png">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide p3-bg " data-hash="slide3">
+                <img class="ani slideElement swiper-lazy p3-02" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s" data-src="img/p3-02.png" />
+                <img class="ani slideElement swiper-lazy p3-03" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.5s" data-src="img/p3-03.png" />
+                <img class="ani slideElement swiper-lazy p3-04" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="2.5s" data-src="img/p3-04.png" />
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide p4-bg " data-hash="slide4">
+                <img class="ani slideElement swiper-lazy p4-02" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s" data-src="img/p4-02.png" />
+                <img class="ani slideElement swiper-lazy p4-03" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s" data-src="img/p4-03.png" />
+                <img class="ani slideElement swiper-lazy p4-04" swiper-animate-effect="fadeInRight" swiper-animate-duration="3s" swiper-animate-delay="1.5s" data-src="img/p4-04.png" />
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide p5-bg " data-hash="slide5">
+                <img class="ani slideElement swiper-lazy p5-02" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s" data-src="img/p5-02.png" />
+                <img class="ani slideElement swiper-lazy p5-03" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.5s" data-src="img/p5-03.png" />
+                <img class="ani slideElement swiper-lazy p5-04" swiper-animate-effect="bounceInright" swiper-animate-duration="1s" swiper-animate-delay="2.5s" data-src="img/p5-04.png" />
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide p6-bg " data-hash="slide6">
+                <img class="ani slideElement swiper-lazy p6-02" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s" data-src="img/p6-02.png" />
+                <img class="ani slideElement swiper-lazy p6-03" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s" data-src="img/p6-03.png" />
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide p7-bg " data-hash="slide7">
+                <img class="ani slideElement swiper-lazy p7-02" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s" data-src="img/p7-02.png" />
+                <img class="ani slideElement swiper-lazy p7-03" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="2.5s" data-src="img/p7-03.png" />
+                <img class="ani slideElement swiper-lazy p7-04" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="1.5s" data-src="img/p7-04.png" />
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide p8-bg " data-hash="slide8">
+                <img class="ani slideElement swiper-lazy p8-02" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s" data-src="img/p8-02.png" />
+                <img class="ani slideElement swiper-lazy p8-03" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s" data-src="img/p8-03.png" />
+                <img class="ani slideElement swiper-lazy p8-04" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="1.5s" data-src="img/p8-04.png" />
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide p9-bg " data-hash="slide9">
+                <img class="ani slideElement swiper-lazy p9-02" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s" data-src="img/p9-02.png" />
+                <img class="ani slideElement swiper-lazy p9-03" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s" data-src="img/p9-03.png" />
+                <img class="ani slideElement swiper-lazy p9-04" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.5s" data-src="img/p9-04.png" />
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide p10-bg " data-hash="slide10">
+                <img class="ani slideElement swiper-lazy p10-02" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1s" data-src="img/p10-02.png" />
+                <img class="ani slideElement swiper-lazy p10-03" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2s" data-src="img/p10-03.png" />
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/swiper.animate1.0.2.min.js?p=201505291044"></script>
+    <script type="text/javascript" src="js/app.js?p=201505291044"></script>
+</body>
+
+</html>

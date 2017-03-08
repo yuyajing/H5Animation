@@ -1,0 +1,256 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft Yahei';
+    background: #3e364e;
+    -webkit-user-select: none;
+}
+
+.loadingText {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -60px;
+    width: 120px;
+    color: #FFFF12;
+    font-size: 28px;
+    text-align: center;
+}
+
+.music {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    z-index: 16;
+    width: 10.625%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.swiper-slide {
+    background-position: top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.wxshare {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.alertDiv {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background-color: rgb(100, 100, 100);
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    left: 20%;
+    top: 30%;
+    text-align: center;
+}
+
+.slideElement {
+    position: absolute;
+}
+
+.arraw {
+    position: absolute;
+    bottom: 5%;
+    left: 278px;
+}
+
+.p1-02 {
+    top: 50%;
+    left: 25%;
+    width: 50%;
+}
+
+.p1-03 {
+    top: 70%;
+    left: 0%;
+    width: 100%;
+}
+
+.p1-04 {
+    top: 67%;
+    left: 45%;
+    width: 10%;
+}
+
+.p2-02 {
+    bottom: 23%;
+    left: 45%;
+    width: 10%;
+}
+
+.p2-03 {
+    top: 3%;
+    left: 30%;
+    width: 40%;
+}
+
+.p2-04 {
+    top: 10%;
+    left: 0;
+    width: 100%;
+}
+
+.p3-02 {
+    top: 19%;
+    left: 43%;
+    z-index: 10;
+    width: 14%;
+}
+
+.p3-03 {
+    bottom: 10%;
+    left: 12%;
+    width: 66%;
+}
+
+.p3-04 {
+    top: 56%;
+    right: 1%;
+    z-index: 10;
+    width: 56%;
+}
+
+.p4-02 {
+    bottom: 8%;
+    left: 43%;
+    width: 12%;
+}
+
+.p4-03 {
+    top: 11%;
+    left: 0;
+    width: 100%;
+    height: 34%;
+}
+
+.p4-04 {
+    bottom: 16%;
+    left: 0%;
+    width: 100%;
+}
+
+.p5-02 {
+    top: 85%;
+    left: 45%;
+    width: 10%;
+}
+
+.p5-03 {
+    top: 8%;
+    left: 0%;
+    width: 100%;
+    height: 40%;
+}
+
+.p5-04 {
+    width: 100%;
+    top: 52%;
+    left: 0%;
+}
+
+#car_audio {
+    display: none;
+}
+
+.p6-02 {
+    top: 10%;
+    left: 45%;
+    width: 10%;
+}
+
+.p6-03 {
+    top: 48%;
+    left: 0%;
+    width: 100%;
+}
+
+.p7-02 {
+    top: 46%;
+    left: 42%;
+    width: 16%;
+}
+
+.p7-03 {
+    top: 4%;
+    left: 0%;
+    width: 100%;
+}
+
+.p7-04 {
+    top: 64%;
+    left: 0%;
+    width: 100%;
+}
+
+.p8-02 {
+    top: 50%;
+    left: 445%;
+    z-index: 10;
+    width: 10%;
+}
+
+.p8-03 {
+    top: 13%;
+    left: 0%;
+    width: 100%;
+}
+
+.p8-04 {
+    top: 73%;
+    left: 0%;
+    width: 100%;
+}
+
+.p9-02 {
+    bottom: 17%;
+    right: 15%;
+    width: 16%;
+}
+
+.p9-03 {
+    top: 2%;
+    left: 0%;
+    width: 100%;
+    height: 40%;
+}
+
+.p9-04 {
+    top: 42%;
+    left: 0;
+    width: 85%;
+    height: 60%;
+}
+
+.p10-02 {
+    top: 25%;
+    left: 0%;
+    width: 100%;
+}
+
+.p10-03 {
+    top: 0;
+    left: 0%;
+    width: 100%;
+}
